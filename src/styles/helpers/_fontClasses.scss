@@ -1,4 +1,22 @@
+%font-standard {
+    font-family: $fallback-font;
+}
+
 %font-size-standard {
     font-size: 16px;
     line-height: 1.5em;
+
+    @include breakpoint('desktop-large') {
+        font-size: 1vw;
+    }
+}
+
+%font-size-headline {
+    font-size: 9vw;
+    line-height: 1em;
+}
+
+%font-size-subline {
+    font-size: 3vw;
+    line-height: 1em;
 }

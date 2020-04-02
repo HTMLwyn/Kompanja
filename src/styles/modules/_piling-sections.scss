@@ -2,10 +2,82 @@ main {
     height: 100vh;
 }
 
-.piling-section {
-    background: $color-white;
+.pp-tableCell {
+    position: relative;
+    overflow: hidden;
+}
 
-    &:nth-child(2n) {
-        background-color: teal;
+.section-layer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+
+    h1 {
+        @extend %font-size-headline;
+        text-transform: uppercase;
+    }
+
+    h2 {
+        @extend %font-size-subline;
+    }
+}
+
+.section-midground {
+    transform: scale(.7) translateY(25%);
+    transform-origin: center center;
+    transition: 1s ease-in-out;
+    transition-property: transform;
+
+    .section-headline-wrapper {
+        position: absolute;
+        top: 40%;
+        left: 20%;
+        transform: translate(0, -50%);
+        color: $color-white;
+    }
+}
+
+.section-foreground {
+    height: 105%;
+    transform: scale(1.3) translateY(-15%);
+    transform-origin: center center;
+    transition: 1s ease-in-out;
+    transition-property: transform;
+
+    .section-text-wrapper {
+        position: absolute;
+        top: 60%;
+        left: 10%;
+        max-width: 400px;
+        transform: translate(0, -50%);
+        color: $color-white;
+        font-weight: bold;
+
+        p {
+            margin-bottom: 1.5em;
+        }
+
+        button {
+            @extend %font-size-standard;
+            padding: 1em;
+            border: 0;
+            border-radius: 4px;
+            background-color: $color-yellow;
+            color: $color-button-text;
+        }
+    }
+}
+
+.piling-section.visible {
+    .section-midground,
+    .section-foreground {
+        transform: scale(1) translateY(0);
     }
 }

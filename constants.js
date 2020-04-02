@@ -13,12 +13,12 @@ const paths = {
 // JS includes
 const vendorJs = [
     './node_modules/jquery/dist/jquery.min.js',
-    './node_modules/pagepiling.js/dist/jquery.pagepiling.min.js'
+    './node_modules/fullpage.js/dist/fullpage.min.js'
 ];
 
 // CSS includes
 const vendorCss = [
-    './node_modules/pagepiling.js/dist/jquery.pagepiling.min.css'
+    './node_modules/fullpage.js/dist/fullpage.min.css'
 ];
 
 // Filenames

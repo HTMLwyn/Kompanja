@@ -1,8 +1,9 @@
 # NPM Stuff
 node_modules
 
-# Gulp generated dist files
+# Gulp generated dist and assets files
 public/dist/*
+public/assets/*
 
 # Custom files
 .idea/*

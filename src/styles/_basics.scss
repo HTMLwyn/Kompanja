@@ -7,7 +7,7 @@
 }
 
 body {
-  //@extend %font-light;
+  @extend %font-standard;
   @extend %font-size-standard;
   position: relative;
   margin: 0 auto;
@@ -62,4 +62,14 @@ i {
   font-size: inherit;
   letter-spacing: inherit;
   line-height: inherit;
+}
+
+main {
+  transition: .5s ease-in-out;
+  transition-property: opacity;
+  opacity: 0;
+
+  &.loaded {
+    opacity: 1;
+  }
 }
