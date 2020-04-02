@@ -1,0 +1,19 @@
+//
+// Layout classes
+//
+
+// Clearfix
+.l-clearfix::after {
+  display: block;
+  height: 0;
+  clear: both;
+  font-size: 0;
+  content: ' ';
+  visibility: hidden;
+}
+* html .l-clearfix {
+  zoom: 1;
+}
+*:first-child+html .l-clearfix {
+  zoom: 1;
+}

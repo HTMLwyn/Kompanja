@@ -1,0 +1,30 @@
+//
+// Grid breakpoints
+//
+// Define the minimum dimensions at which your layout will change,
+// adapting to different screen sizes, for use in media queries.
+//
+$media-direction:       min;
+$breakpoints: (
+        'default':            '',
+        'tablet-portrait':    560px,
+        'tablet-landscape':   768px,
+        'desktop-small':      1024px,
+        'desktop-medium':     1440px,
+        'desktop-large':      1920px
+);
+
+@mixin breakpoint($breakpoint, $direction: $media-direction) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media (#{$direction}-width: #{map-get($breakpoints, $breakpoint)}) {
+      @content;
+    }
+  }
+
+  @else if unitless($breakpoint) {
+    $breakpoint: $breakpoint + 0px;
+    @media (#{$direction}-width: $breakpoint) {
+      @content;
+    }
+  }
+}

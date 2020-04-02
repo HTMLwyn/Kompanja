@@ -1,0 +1,14 @@
+{
+  "parserOptions": {
+    "ecmaVersion": 6
+  },
+  "rules": {
+    "quotes": ["error", "single", {
+      "allowTemplateLiterals": true
+    }],
+    "semi": ["error", "always"],
+    "semi-style": ["error", "last"],
+    "no-extra-semi": "error",
+    "eol-last": ["error", "always"]
+  }
+}

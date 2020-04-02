@@ -1,0 +1,65 @@
+//
+// Basics
+//
+* {
+  box-sizing: border-box;
+  font-variant-numeric: lining-nums;
+}
+
+body {
+  //@extend %font-light;
+  @extend %font-size-standard;
+  position: relative;
+  margin: 0 auto;
+  color: $color-text;
+  text-rendering: geometricPrecision;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+}
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+  outline: none;
+  vertical-align: bottom;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-weight: normal;
+}
+
+ul,
+ul li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: $color-text;
+  text-decoration: none;
+}
+
+strong,
+b,
+em,
+i {
+  font-size: inherit;
+  letter-spacing: inherit;
+  line-height: inherit;
+}
