@@ -91,6 +91,35 @@ main {
     }
 }
 
+.section-footer {
+    @extend %font-condensed;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 100%;
+    max-width: 1440px;
+    padding-bottom: 120px;
+    transform: translateX(-50%);
+    color: $color-footer-text;
+    z-index: 999;
+
+    .logo {
+        top: 8px;
+        width: 64px;
+        height: 60px;
+    }
+
+    li {
+        display: block;
+        margin: 0 3em .75em;
+        text-align: left;
+    }
+
+    a {
+        color: $color-footer-text;
+    }
+}
+
 .piling-section {
     &.visible {
         .section-midground,
