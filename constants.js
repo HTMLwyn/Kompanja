@@ -1,5 +1,5 @@
 // WordPress
-const themePath = './public/wp-content/themes/andreas_gefeller';
+const themePath = './public';
 
 // Paths
 const paths = {
@@ -12,12 +12,13 @@ const paths = {
 
 // JS includes
 const vendorJs = [
-
+    './node_modules/jquery/dist/jquery.min.js',
+    './node_modules/pagepiling.js/dist/jquery.pagepiling.min.js'
 ];
 
 // CSS includes
 const vendorCss = [
-
+    './node_modules/pagepiling.js/dist/jquery.pagepiling.min.css'
 ];
 
 // Filenames

@@ -1,0 +1,11 @@
+main {
+    height: 100vh;
+}
+
+.piling-section {
+    background: $color-white;
+
+    &:nth-child(2n) {
+        background-color: teal;
+    }
+}

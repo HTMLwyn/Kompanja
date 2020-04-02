@@ -33,6 +33,7 @@
     "gulp-uglify": "^3.0.0",
     "gulp-util": "^3.0.8",
     "jquery": "^3.4.1",
-    "lazysizes": "^5.2.0"
+    "lazysizes": "^5.2.0",
+    "pagepiling.js": "^1.5.6"
   }
 }
