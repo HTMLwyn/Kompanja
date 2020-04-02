@@ -32,6 +32,7 @@ $(document).ready(function () {
 
         $('.piling-section-wrapper').fullpage({
             anchors: sectionAnchors,
+            easingcss3: 'cubic-bezier(0.645, 0.045, 0.355, 1.000)',
             navigation: true,
             scrollingSpeed: 1000,
             sectionSelector: '.piling-section',
@@ -40,9 +41,13 @@ $(document).ready(function () {
 
                 // Switch animation classes
                 $(origin.item).removeClass('visible');
+                $(origin.item).find('.section-text-wrapper').removeClass('visible');
                 $(destination.item).addClass('visible');
             },
-            afterLoad: function(anchorLink, index) {
+            afterLoad: function(origin, destination, direction) {
+
+                // Add visible class to text containers
+                $(destination.item).find('.section-text-wrapper').addClass('visible');
             },
             afterRender: function() {
 

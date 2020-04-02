@@ -1,14 +1,25 @@
 %font-standard {
-    font-family: $fallback-font;
+    font-family: 'Roboto', $fallback-font;
+}
+
+%font-condensed {
+    font-family: 'Roboto Condensed', $fallback-font;
 }
 
 %font-size-standard {
     font-size: 16px;
+    letter-spacing: .035em;
     line-height: 1.5em;
 
     @include breakpoint('desktop-large') {
         font-size: 1vw;
     }
+}
+
+%font-size-nav {
+    font-size: 20px;
+    letter-spacing: .035em;
+    line-height: 1.5em;
 }
 
 %font-size-headline {
