@@ -55,27 +55,38 @@ main {
     .section-text-wrapper {
         @extend %font-size-standard;
         position: absolute;
-        transition: .25s ease-in-out;
-        transition-property: opacity;
+        top: 50%;
+        left: 50%;
         color: $color-white;
         font-weight: bold;
-        opacity: 0;
-
-        &.visible {
-            opacity: 1;
-        }
 
         p {
             margin-bottom: 1.5em;
+            transition: .25s ease-in-out;
+            transition-property: color;
+            color: transparent;
         }
 
         button {
             @extend %font-size-standard;
             padding: 1em;
+            transition: .25s ease-in-out;
+            transition-property: visibility;
             border: 0;
             border-radius: 4px;
             background-color: $color-yellow;
             color: $color-button-text;
+            visibility: hidden;
+        }
+
+        &.visible {
+            p {
+                color: $color-white;
+            }
+
+            button {
+                visibility: visible;
+            }
         }
     }
 }
