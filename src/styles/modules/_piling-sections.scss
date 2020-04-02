@@ -52,10 +52,11 @@ main {
     transition-property: transform;
 
     .section-text-wrapper {
+        @extend %font-size-standard;
         position: absolute;
         top: 60%;
-        left: 10%;
-        max-width: 400px;
+        left: 12vw;
+        max-width: 30em;
         transform: translate(0, -50%);
         color: $color-white;
         font-weight: bold;
