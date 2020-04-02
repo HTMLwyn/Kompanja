@@ -69,7 +69,7 @@ main {
 
         button {
             @extend %font-size-standard;
-            padding: 1em;
+            padding: .8em 1.2em;
             transition: .25s ease-in-out;
             transition-property: visibility;
             border: 0;
@@ -100,8 +100,7 @@ main {
     }
 
     // Custom styling for the slides
-    &:first-child,
-    &:nth-child(3) {
+    &:first-child {
         .section-headline-wrapper {
             left: 30%;
         }
@@ -125,6 +124,28 @@ main {
             left: 20vw;
             max-width: 30em;
             transform: translate(0, -50%);
+        }
+    }
+
+    &:nth-child(3) {
+        .section-headline-wrapper {
+            top: 25%;
+            left: 20%;
+        }
+
+        h1 {
+            margin-left: -1em;
+        }
+    }
+
+    &:nth-child(4) {
+        .section-headline-wrapper {
+            top: 42%;
+            left: 35%;
+        }
+
+        h1 {
+            margin-left: -.5em;
         }
     }
 }
